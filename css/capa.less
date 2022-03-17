@@ -1,0 +1,95 @@
+@import 'vars';
+
+
+// Capabilities
+
+.capa_main{
+    margin-top: 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .capa_title{
+
+        & h2{
+            font-size: 18px;
+            color: @textcolor;
+            font-family: @opensans;
+            text-transform: uppercase;
+        }
+
+        & .line{
+            width: 50px;
+            height: 2px;
+            border-bottom: 2px solid @blue;
+            margin-top: 10px;
+        }
+    }
+
+    & .capa_text{
+
+        margin-left: 115px;
+
+        & span{
+            font-size: 11px;
+            line-height: 19px;
+            letter-spacing: 0.2px;
+            color: @textcolor;
+            font-family: @opensans;
+        }
+    }
+
+    & button{
+        padding: 11px 29px;
+        background-color: @blue;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: @white;
+        border: 1px solid @blue;
+        cursor: pointer;
+        font-family: @opensans;
+
+        &:hover{
+            background-color: @white;
+            transition-duration: 0.5s;
+            color: @blue;
+        }
+    }
+}
+
+
+// Projects
+
+.projects{
+    display: flex;
+    margin-top: 78px;
+    justify-content: center;
+
+    & .project_block{
+        width: 295px;
+        height: 330px;
+        border: 1px solid #E6E6E6;
+        padding: 38px 23px;
+        font-family: @opensans;
+        color: @textcolor;
+
+        & + .project_block{
+            margin-left: 28px;
+        }
+
+        & h2{
+            font-size: 16px;
+            letter-spacing: 0.43px;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-bottom: 13px;
+        }
+
+        & span{
+            font-size: 13px;
+            line-height: 23px;
+            letter-spacing: 0.19px;
+        }
+    }
+}

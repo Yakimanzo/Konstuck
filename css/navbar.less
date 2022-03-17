@@ -1,0 +1,42 @@
+@import 'vars.less';
+
+//Navbar
+
+.navbar{
+    border-bottom: 1px solid #E6E6E6;;
+    
+
+    & .navbar_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 65px;
+    }
+
+    & .navbar_logo img{
+        width: 79.71px;
+        height: 16.43px;
+    }
+
+    & .menu{
+        display: flex;
+
+        & a{
+            font-size: 12px;
+            color: @textcolor;
+            text-transform: uppercase;
+            font-family: @opensans;
+            font-weight: bold;
+        }
+
+        & a:hover{
+            color: @blue;
+            transition-duration: 0.5s;
+        }  
+        
+
+        & li + li{
+            margin-left: 39px;
+        }
+    }
+}

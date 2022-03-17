@@ -1,0 +1,41 @@
+@import 'vars.less';
+
+
+.city_bg{
+    background: url(../img/bgcity.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 499px;
+    margin-top: 115px;
+
+    & .city_title{
+        font-family: @opensans;
+        text-align: center;
+
+        & h1{
+            padding-top: 120px;
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: 0.15px;
+            color: @textcolor;
+        }
+
+        & button{
+            padding: 11px 26px;
+            background-color: @blue;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: @white;
+            border: 1px solid @blue;
+            cursor: pointer;
+            font-family: @opensans;
+            margin-top: 35px;
+    
+            &:hover{
+                background-color: @white;
+                transition-duration: 0.5s;
+                color: @blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import 'vars.less';
+
+// Newsletter + footer
+
+//Newsletter
+
+.news{
+    background-color: @footercolor;
+    height: 100px;
+
+    & .news_main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        font-family: @opensans;
+
+        & h1{
+            font-size: 22px;
+            letter-spacing: 0.85px;
+            color: @white;
+            margin-right: 70px;
+        }
+
+        & input{
+            width: 250px;
+            height: 40px;
+            padding: 11px 16px;
+            border: none;
+
+            &::placeholder{
+                color: @textcolor;
+                font-size: 14px;
+            }
+
+            &:focus{
+                border: 1px solid #979797;
+                outline: none;
+            }
+        }
+
+        & button{
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: @opensans;
+            color: @white;
+            background-color: @blue;
+            padding: 11px 48.5px;
+            border: 1px solid @blue;
+            cursor: pointer;
+            transition: background-color .15s ease-in-out;
+
+            &:hover{
+                background-color: @white;
+                color: @blue;
+            }
+        }
+    }
+}
+
+//Footer info
+
+.footer_info{
+    color: @white;
+    background-color: @infobgcolor;
+    font-family: @opensans;
+    height: 240px;
+    font-size: 11px;
+
+    & a{
+        color: @white;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover{
+            color: @blue;
+            transition-duration: 0.5s;
+        }
+    }
+
+    & li + li{
+        margin-top: 17px;
+    }
+
+    & .info_main{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 42px;
+
+        & .company{
+            display: flex;
+            flex-direction: column;
+
+            & img{
+                width: 101.86px;
+                height: 20.99;
+                margin-bottom: 17px;
+            }
+
+            & p{
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        & .links{
+
+            & p{
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+
+        & .faq, .blog{
+            margin-top: 25px;
+        }
+
+        & .contact_us{
+
+            & p:first-child{
+                text-transform: uppercase;
+            }
+
+            & p + p{
+                margin-top: 15px;
+            }
+        }
+
+        & .social_media{
+            margin-top: 30px;
+
+            & a + a{
+                margin-left: 24px;
+            }
+
+            & img{
+                width: 18.04px;
+                height: 18.04px;
+                filter: grayscale(80%);
+
+                &:hover{
+                    filter: grayscale(0);
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+
+.footer{
+    height: 60px;
+    background-color: @footercolor;
+
+    & p{
+        text-align: center;
+        color: @white;
+        opacity: 0.8;
+        font-family: @opensans;
+        font-size: 11px;
+        padding-top: 22px;
+    }
+}

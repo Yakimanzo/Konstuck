@@ -1,0 +1,52 @@
+@import 'vars.less';
+
+// Main page
+
+.main_page{
+    background: url(../img/bg.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 769px;
+
+    & .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        & .main_logo{
+            margin-top: 41.6px;
+
+            & img{
+                width: 101.86px;
+                height: 20.99px;
+            }
+        }
+
+        & .title{
+            margin-top: 318.67px;
+            color: @white;
+            text-align: center;
+
+            & h1{
+                font-size: 60px;
+                text-transform: uppercase;
+                letter-spacing: 5.7px;
+                font-family: @bebas;
+            }
+
+            &h4{
+                font-size: 16px;
+                font-family: @opensans;
+            }
+        }
+
+        & a{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: @white;
+            margin-top: 221px;
+            font-family: @opensans;
+            letter-spacing: 3.7px;
+        }
+    }
+}
