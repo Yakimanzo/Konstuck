@@ -7,11 +7,19 @@
     background-size: cover;
     width: 100%;
     height: 769px;
+    
+    & .header.element-show{
+        opacity: 1;
+        transition: all 1.5s;
+        transform: translateY(0%);
+    }
 
     & .header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        opacity: 0;
+        transform: translateY(20px);
         
         & .main_logo{
             margin-top: 41.6px;
