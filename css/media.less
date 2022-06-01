@@ -1,0 +1,318 @@
+// Media
+
+@media only screen and (max-width: 1000px){
+
+    // Story main
+
+    .story_main{
+        flex-direction: column;
+        margin-top: 40px;
+
+        & .story_info{
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    // Story picture right block
+
+    .story_pictures{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        height: 200px;
+    }
+
+    .right_block{
+        flex: 1;
+
+        &:hover{
+            flex: 1;
+        }
+
+        & h2{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    // Capabilities
+
+    .capa_text{
+        margin-left: 0!important;
+    }
+}
+
+@media only screen and (max-width: 850px){
+
+
+    // Capabilities
+
+    .capa_main button{
+        padding: 11px 20px!important;
+    }
+
+    .project_block{
+        padding: 34px 20px!important;
+
+        & h2{
+            font-size: 14px!important;
+        }
+
+        & span{
+            font-size: 11px!important;
+        }
+
+        & + .project_block{
+            margin-left: 24px!important
+        }
+    }
+
+    // city.less
+
+    .city_bg{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 812px){
+
+    //Capabilities
+
+    .project_block{
+        padding: 30px 18px!important;
+
+        & h2{
+            letter-spacing: 0.20px!important;
+        }
+
+        & + .project_block{
+            margin-left: 20px!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 712px){
+
+    //Capabilities
+
+    .capa_main button{
+        padding: 10px 15px!important;
+    }
+
+    .capa_title h2{
+        font-size: 14px!important;
+    }
+
+    .capa_text span{
+        line-height: 12px!important;
+    }
+
+    .project_block{
+        
+        & span{
+            line-height: 15px!important;
+        }
+
+        & h2{
+            letter-spacing: 0.10px!important;
+            margin-bottom: 10px!important;
+        }
+
+        & + .project_block{
+            margin-left: 20px!important;
+        }
+    }
+
+    // Newsletter
+
+    .news_main{
+        
+
+        & h1{
+            font-size: 20px!important;
+        }
+
+        & input{
+            width: 225px!important;
+        }
+    }
+
+    .footer_info{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 665px){
+    
+    // Capabilities
+
+    .capa_text{
+
+        & span{
+            font-size: 10px!important;
+        }
+    }
+
+    .capa_title h2{
+        font-size: 12px!important;
+    }
+
+    // Projects
+
+    .project_block{
+        padding: 25px 15px!important;
+
+        & h2{
+            font-size: 12px!important;
+            line-height: 20px!important;
+        }
+
+        & span{
+            font-size: 10px!important;
+        }
+
+        & + .project_block{
+            margin-left: 15px!important;
+        }   
+    }
+
+    // Newsletter
+
+    .news_main{
+        
+
+        & h1{
+            font-size: 18px!important;
+        }
+
+        & input{
+            width: 200px!important;
+        }
+
+        & button{
+            padding: 11px 24.5px!important;
+        }
+    }
+
+    .social_media{
+        display: flex;
+        flex-direction: column;
+
+        & a + a{
+            margin-left: 0!important;
+            margin-top: 10px!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .title{
+        margin-top: 200px!important;
+    }
+
+    .navbar .menu a{
+        font-size: 10px;
+    }
+
+    .navbar .menu li + li{
+        margin-left: 20px;
+    }
+
+    .capa_main{
+        flex-direction: column;
+
+        & h2{
+            font-size: 18px!important;
+        }
+
+        & button{
+            margin-top: 20px!important;
+        }
+    }
+
+    .capa_text{
+        margin-top: 20px!important;
+
+        & span{
+            font-size: 11px!important;
+        }
+    }
+
+    .projects{
+        flex-direction: column!important;
+        align-items: center!important;
+
+        & h2{
+            font-size: 15px;
+        }
+
+        & span{
+            font-size: 12px!important;
+        }
+
+        & .project_block + .project_block{
+            margin-left: 0!important;
+            margin-top: 20px!important;
+        }
+    }
+
+    .news_main{
+        flex-direction: column;
+        padding-top: 20px!important;
+        
+        & form{
+            margin-top: 10px!important;
+        }
+
+        & h1{
+            margin-right: 0!important;
+        }
+    }
+
+    .info_main{
+        flex-direction: column;
+        align-items: center;
+
+        & .company{
+            flex-direction: row!important;
+            justify-content: space-between!important;
+            align-items: center!important;
+
+            & img{
+                margin-bottom: 0!important;
+                margin-left: 10px!important;
+            }
+
+            & p{
+                margin-bottom: 0!important;
+            }
+
+            & span{
+                margin-left: 15px!important;
+            }
+        }
+
+        .links, .faq, .blog{
+            display: none!important;
+        }
+
+        .contact_us{
+            margin-top: 20px!important;
+        }
+    }
+
+    .social_media{
+        display: flex;
+        flex-direction: row;
+
+        & a + a{
+            margin-left: 20px!important;
+            margin-top: 0!important;
+            margin-bottom: 10px!important;
+        }
+    }
+    
+}
