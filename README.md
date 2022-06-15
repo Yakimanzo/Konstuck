@@ -1,4 +1,4 @@
-<h1>Konstuck</h2>
-<span>Simple one page site using HTML and Less, soon will add JavaScript and maybe some new futures.</span><br>
-<p>For now ready Desktop and mobile version</p>
-Here posible check https://yakimanzo.github.io/Konstuck/<br>
+<h1>Konstuck</h1>
+<span>Лендінг був створений по макету з Figma, дизайну для мобільної версії не було тож створював його сам. Користувався Less для стилізації, а також трохи JavaScript.</span><br> 
+
+<p>Подивитись на роботу можна тут --> https://yakimanzo.github.io/Konstuck/</p><br>
